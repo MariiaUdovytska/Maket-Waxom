@@ -1,52 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-@font-face {
-	font-family: 'Conv_Montserrat';
-	src: url('../fonts/Montserrat.eot');
-	src: local('☺'), url('fonts/Montserrat.woff') format('woff'), url('fonts/Montserrat.ttf') format('truetype'), url('fonts/Montserrat.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
 
 .wrappeR {
+	min-height: 100%;
 	overflow: hidden;
+
 	display: flex;
+	flex-direction: column;
 }
+
 .page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0%;
+	display: flex;
+	flex-direction: column;
 }
+
 .container {
-	margin: auto;
+	margin: 0px auto;
 }
+
 .header {
+	position: relative;
+	flex: 1 0 100%;
 
 		&__image {
 			background-image: url(../img/block_1/bg_photo_11949.png);
+			background-position: center;
+			background-size: cover;
+			position: absolute;
 			height: 100%;
 			width: 100%;
+			top: 0;
+			left: 0%;
 		}
 
 		&__row {
+			display: flex;
+			flex: 0 1 auto;
+			max-width: 1170px;
+			margin: 40px auto;
+			padding: 0px 15px;
+		}
+
+		@media (max-width: 850px) {
+			.header__row{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				left: 0px;
+				background-color: rgb(73, 67, 67);
+				margin: 0px;
+				flex-direction: column;
+				align-items: center;
+			}
+			.header__logo{
+				align-items: center;
+				flex-direction: column;
+				
+				flex: 0 0 26.2%;
+			}
+			.header__img{
+				padding-top: 30px;
+				flex: 0 0 45%;
+			}
+			.header__logo-text{
+				flex: 0 0 55%;
+			}
+			.header__menu{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.header__right{
+				margin-top: 50px;
+				padding-bottom: 15px;
+			}
 		}
 
 		&__logo {
+			display: flex;
+			flex: 0 0 34.2%;
+		}
+
+		&__img {
+			display: inline-block;
+			z-index: 2;
 		}
 
 		&__logo-text {
+			font-family: 'Raleway';
+			font-size: 34px;
+			text-decoration: none;
+			line-height: 1.2;
+			font-weight: 400;
+			letter-spacing: -0.04em;
+			color: #ffffff;
+			align-self: center;
 		}
 
 		&__menu {
+			display: flex;
+			flex: 0 0 54.7%;
+			align-self: center;
+			justify-content: space-between;
 		}
 
 		&__btn {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 14px;
+			text-decoration: none;
+			line-height: 1.2;
+			font-weight: 300;
+			color: #ffffff;
 		}
 
 		&__btn-color {
+			font-family: 'Conv_Montserrat';
+			font-size: 14px;
+			text-decoration: none;
+			line-height: 1.2;
+			font-weight: 300;
+			color: #c7b299;
 		}
 
 		&__right {
+			display: flex;
+			flex: 0 0 11.1%;
+			justify-content: flex-end;
+			align-self: center;
 		}
 
 		&__logo-market {
+			margin-right: 28px;
+			@media (max-width: 950px) {
+				margin-right: 20px;
+			}
 		}
 
 		&__logo-search {
