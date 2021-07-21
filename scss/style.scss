@@ -341,15 +341,15 @@ margin-top: 0px auto;
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		
 	}
 
 	&__center {
 		position: absolute;
-		top: 0;
-		left: 19%;
-		margin: auto;
+		top:0;
+		left:50%;
+		transform:translate(-50%, 0%);
 		z-index: 2;
+		height: 100%;
 	}
 
 	&__right {
@@ -358,6 +358,5 @@ margin-top: 0px auto;
 		bottom: 0;
 	}
 }
-.container {
-}
+
 

@@ -366,4 +366,56 @@
 .realization__column {
   max-width: 1230px;
   margin: auto;
+  padding: 80px 0px 0px 0px;
+}
+
+.realization__up {
+  max-height: 215px;
+  max-width: 770px;
+  margin: auto;
+  text-align: center;
+}
+
+.realization__title {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+
+.realization__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 18px 0px 33px 0px;
+}
+
+.realization__img {
+  position: relative;
+  height: 486px;
+}
+
+.realization__left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.realization__center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  z-index: 2;
+  height: 100%;
+}
+
+.realization__right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
