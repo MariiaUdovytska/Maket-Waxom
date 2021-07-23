@@ -20,7 +20,6 @@
 }
 
 .container {
-margin-top: 0px auto;
 }
 
 .header {
@@ -313,9 +312,6 @@ margin-top: 0px auto;
 	}
 
 	@media(max-width: 765px) {
-		.realization__img{
-			height: 400px;
-		}
 		.realization__left{
 			display: none;
 		}
@@ -324,11 +320,17 @@ margin-top: 0px auto;
 		}
 		.realization__center{
 			img{
+				display: block;
 				width: 100%;
 				height: auto;
 			}
+			position: unset;
 			left:0;
 			transform:translate(0%, 0%);
+
+		}
+		.realization__img{
+			height: unset;
 		}
 	}
 	&__column {
@@ -396,22 +398,99 @@ margin-top: 0px auto;
 
 
 .purchase {
+	flex: 1 1 auto;
+
+	@media (max-width: 1325px) {
+		.purchase__row{
+			margin: 0px 77px;
+		}
+	}
+	@media (max-width: 900px) {
+		.purchase__btn{
+			width: 150px;
+			height: 37px;
+			span{
+				font-size: 12px;
+			}
+		}
+		.purchase__left{
+			p{
+				font-size: 15px;
+			}
+		}
+		.purchase__text{
+			font-size: 24px;
+		}
+	}
+	@media (max-width: 780px) {
+		.purchase__row{
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+		}
+		.purchase__left{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
 
 	&__bg {
+		background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
 	}
 
 	&__row {
+		display: flex;
+		flex: 0 1 auto;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 1170px;
+		margin: auto;
+		padding: 50px 0px;
 	}
 
 	&__left {
+		p{
+			font-family: Montserrat;
+			font-size: 18px;
+			line-height: 1.2;
+			font-weight: 300;
+			color: #615855;
+			margin: 0px;
+		}
+	}
+
+	&__text{
+		font-family: Raleway;
+		font-size: 28px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #ffffff;
 	}
 
 	&__right {
+		align-self: center;
 	}
 
 	&__btn {
+		width: 170px;
+		height: 50px;
+		background-color: #998675;
+		border-radius: 3px;
+		span{
+			font-family: Raleway;
+			font-size: 14px;
+			line-height: 23px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #ffffff;
+		}
 	}
 }
 .yellow {
+	font-family: Raleway;
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #c7b299;
 }
 
