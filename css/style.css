@@ -307,6 +307,13 @@ h6 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header__logo-text:hover {
+  color: #ffffff !important;
+  font-size: 40px;
 }
 
 @media (max-width: 850px) {
@@ -355,6 +362,10 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__menu:hover a {
+  color: #ffffff !important;
 }
 
 .header__btn {

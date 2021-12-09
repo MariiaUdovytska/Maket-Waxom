@@ -252,6 +252,11 @@ h6 {
     letter-spacing: -0.04em;
     color: #ffffff;
     align-self: center;
+    transition: all 0.5s ease;
+  }
+  &__logo-text:hover {
+    color: #ffffff !important;
+    font-size: 40px;
   }
 
   &__burger {
@@ -298,6 +303,11 @@ h6 {
     flex: 0 0 54.7%;
     align-self: center;
     justify-content: space-between;
+  }
+  &__menu:hover {
+    a {
+      color: #ffffff !important;
+    }
   }
 
   &__btn {
