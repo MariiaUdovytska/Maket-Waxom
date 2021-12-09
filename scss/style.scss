@@ -6,9 +6,11 @@
 *,
 *:before,
 *:after {
+  /*
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  */
 }
 :focus,
 :active {
@@ -103,27 +105,36 @@ h6 {
 }
 
 .header {
-  position: relative;
-  flex: 1 0 100%;
+  //   position: relative;
+  //   flex: 1 0 100%;
+  width: 1170px;
+  margin: auto;
 
-  &__image {
-    background-image: url(../img/block_1/bg_photo_11949.png);
-    background-position: center;
-    background-size: cover;
-    //position: absolute;
-    height: 100%;
-    width: 100%;
-    //top: 0;
-    //left: 0%;
-    min-height: 1024px;
-  }
+  //   &__image {
+  //     background-image: url(../img/block_1/bg_photo_11949.png);
+  //     background-position: center;
+  //     background-size: cover;
+  //     //position: absolute;
+  //     height: 100%;
+  //     width: 100%;
+  //     //top: 0;
+  //     //left: 0%;
+  //     min-height: 1024px;
+  //   }
 
   &__row {
+    //  display: flex;
+    //  flex: 0 1 auto;
+    //  max-width: 1170px;
+    //  margin: 40px auto;
+    //  padding: 0px 15px;
+    position: absolute;
     display: flex;
-    flex: 0 1 auto;
-    max-width: 1170px;
-    margin: 40px auto;
+    flex: 1 1 auto;
+    width: 1170px;
     padding: 0px 15px;
+    margin: 40px auto;
+    z-index: 2;
   }
 
   @media (max-width: 850px) {
@@ -269,6 +280,76 @@ h6 {
   }
 
   &__logo-search {
+  }
+}
+
+// то что меняю в карусели
+.carousel-indicators [data-bs-target] {
+  width: 10px; /* change width */
+  height: 10px; /* change height */
+  border-radius: 100%; // /* add border-radius */
+}
+
+.carousel-item {
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.carousel-caption {
+  align-self: center;
+  width: 600px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  margin: auto;
+
+  h5 {
+    font-family: Raleway;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ffffff;
+  }
+}
+
+.title-carousel {
+  display: block;
+  font-family: Raleway;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.text-carousel {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.carousel-item-add-button {
+  align-self: center;
+}
+.carousel-i-a-btn {
+  width: 170px;
+  height: 53px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0px 0px #736357;
+  border-radius: 3px;
+  span {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }
 
