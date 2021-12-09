@@ -119,6 +119,87 @@ h6 {
           flex-direction: column;
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  /* change width */
+  height: 10px;
+  /* change height */
+  border-radius: 100%;
+}
+
+.carousel-item {
+  overflow: hidden;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-caption {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 600px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: auto;
+}
+
+.carousel-caption h5 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.title-carousel {
+  display: block;
+  font-family: Raleway;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.text-carousel {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.carousel-item-add-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.carousel-i-a-btn {
+  width: 170px;
+  height: 53px;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #736357;
+          box-shadow: inset 0px -3px 0px 0px #736357;
+  border-radius: 3px;
+}
+
+.carousel-i-a-btn span {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .header {
   width: 1170px;
   margin: auto;
@@ -316,87 +397,6 @@ h6 {
   .header__logo-market {
     margin-right: 20px;
   }
-}
-
-.carousel-indicators [data-bs-target] {
-  width: 10px;
-  /* change width */
-  height: 10px;
-  /* change height */
-  border-radius: 100%;
-}
-
-.carousel-item {
-  overflow: hidden;
-}
-
-.carousel-item img {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.carousel-caption {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 600px;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin: auto;
-}
-
-.carousel-caption h5 {
-  font-family: Raleway;
-  font-size: 36px;
-  line-height: 1.2;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.title-carousel {
-  display: block;
-  font-family: Raleway;
-  font-size: 52px;
-  line-height: 1.2;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-.text-carousel {
-  font-family: Montserrat;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  color: #ffffff;
-}
-
-.carousel-item-add-button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.carousel-i-a-btn {
-  width: 170px;
-  height: 53px;
-  background-color: #998675;
-  -webkit-box-shadow: inset 0px -3px 0px 0px #736357;
-          box-shadow: inset 0px -3px 0px 0px #736357;
-  border-radius: 3px;
-}
-
-.carousel-i-a-btn span {
-  font-family: Raleway;
-  font-size: 14px;
-  line-height: 23px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .content {
