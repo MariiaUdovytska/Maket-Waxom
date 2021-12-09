@@ -101,7 +101,7 @@ h6 {
   flex-direction: column;
 }
 
-.container {
+.containerM {
 }
 
 // то что меняю в карусели
@@ -175,36 +175,19 @@ h6 {
 }
 
 .header {
-  //   position: relative;
-  //   flex: 1 0 100%;
-  width: 1170px;
+  //position: relative;
+  //flex: 1 0 100%;
+  width: 100%;
   margin: auto;
-
-  //   &__image {
-  //     background-image: url(../img/block_1/bg_photo_11949.png);
-  //     background-position: center;
-  //     background-size: cover;
-  //     //position: absolute;
-  //     height: 100%;
-  //     width: 100%;
-  //     //top: 0;
-  //     //left: 0%;
-  //     min-height: 1024px;
-  //   }
+  position: absolute;
+  z-index: 2;
 
   &__row {
-    //  display: flex;
-    //  flex: 0 1 auto;
-    //  max-width: 1170px;
-    //  margin: 40px auto;
-    //  padding: 0px 15px;
-    position: absolute;
     display: flex;
     flex: 1 1 auto;
-    width: 1170px;
+    max-width: 1170px;
     padding: 0px 15px;
     margin: 40px auto;
-    z-index: 2;
   }
 
   @media (max-width: 850px) {
