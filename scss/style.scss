@@ -270,8 +270,16 @@ body {
       margin-right: 20px;
     }
   }
+  &__logo-market:hover {
+    transform: rotateZ(360deg);
+    transition: all 1s ease;
+  }
 
   &__logo-search {
+  }
+  &__logo-search:hover {
+    transform: rotateZ(360deg);
+    transition: all 1s ease;
   }
 }
 
