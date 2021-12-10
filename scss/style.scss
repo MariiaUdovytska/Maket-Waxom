@@ -83,8 +83,9 @@ body {
   width: 170px;
   height: 53px;
   background-color: #998675;
-  box-shadow: inset 0px -3px 0px 0px #736357;
-  border-radius: 3px;
+  //box-shadow: inset 0px -3px 0px 0px #736357;
+  border-radius: 6px;
+  transition: all 1s ease;
   span {
     font-family: Raleway;
     font-size: 14px;
@@ -92,7 +93,12 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     color: #ffffff;
+    transition: all 1s ease;
   }
+}
+.carousel-i-a-btn:hover {
+  background-color: #736357;
+  box-shadow: 3px 3px 0px 0px #998675;
 }
 
 .header {

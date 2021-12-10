@@ -170,9 +170,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 170px;
   height: 53px;
   background-color: #998675;
-  -webkit-box-shadow: inset 0px -3px 0px 0px #736357;
-          box-shadow: inset 0px -3px 0px 0px #736357;
-  border-radius: 3px;
+  border-radius: 6px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .carousel-i-a-btn span {
@@ -182,6 +182,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.carousel-i-a-btn:hover {
+  background-color: #736357;
+  -webkit-box-shadow: 3px 3px 0px 0px #998675;
+          box-shadow: 3px 3px 0px 0px #998675;
 }
 
 .header {
