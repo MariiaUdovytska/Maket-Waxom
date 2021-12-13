@@ -506,10 +506,22 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.content__logo img {
+.content__column img {
   display: block;
   height: 49px;
   margin: auto;
+  -webkit-filter: invert(34%) sepia(3%) saturate(159%) hue-rotate(18deg) brightness(93%) contrast(91%);
+          filter: invert(34%) sepia(3%) saturate(159%) hue-rotate(18deg) brightness(93%) contrast(91%);
+}
+
+.content__column:hover {
+  -webkit-filter: invert(87%) sepia(25%) saturate(366%) hue-rotate(340deg) brightness(84%) contrast(82%);
+          filter: invert(87%) sepia(25%) saturate(366%) hue-rotate(340deg) brightness(84%) contrast(82%);
+}
+
+.content__column:hover__text:hover {
+  -webkit-filter: invert(8%) sepia(19%) saturate(691%) hue-rotate(183deg) brightness(95%) contrast(94%);
+          filter: invert(8%) sepia(19%) saturate(691%) hue-rotate(183deg) brightness(95%) contrast(94%);
 }
 
 .content__title {
@@ -538,17 +550,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f1eee9;
 }
 
-.color {
-  color: #c7b299;
-}
-
-.after:after {
-  display: block;
-  margin: 20px auto auto auto;
-  content: "";
-  width: 70px;
-  height: 3px;
-  background-color: #c7b299;
+.content__text:hover {
+  color: #8c8c8c;
 }
 
 .realization {
