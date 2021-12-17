@@ -898,6 +898,12 @@ h1, h2, h3, h4, h5, h6 {
 .projects__body {
   padding: 30px 0px 30px 30px;
   background-color: #fbfaf8;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.projects__body:hover, .projects__body:active {
+  background-color: #362f2d;
 }
 
 .projects__preview-title {
@@ -914,6 +920,51 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   font-weight: 300;
   color: #d1d1d1;
+}
+
+.projects__preview-column-test {
+  padding: 0px 15px;
+  width: 370px;
+  margin: 0px 0px 30px 0px;
+}
+
+.projects__preview-column-test img {
+  width: 100%;
+}
+
+.projects__preview-column-test h2 {
+  margin-bottom: 0;
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7b299;
+}
+
+.projects__preview-column-test p {
+  margin-bottom: 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #d1d1d1;
+}
+
+.projects__preview-column-test:hover .projects__body-test,
+.projects__preview-column-test:active .projects__body-test {
+  background-color: #362f2d;
+}
+
+.projects__preview-column-test img:hover,
+.projects__preview-column-test img:active {
+  opacity: 0.5;
+}
+
+.projects__body-test {
+  padding: 30px 0px 30px 30px;
+  background-color: #fbfaf8;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .projects__preview-column-a {
