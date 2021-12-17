@@ -651,7 +651,7 @@ body {
   // margin ввурху и padding внизу раздвигают на 30px колонки между собой
   &__preview-column {
     padding: 0px 15px;
-    width: 370px;
+    max-width: 370px;
     margin: 0px 0px 30px 0px;
   }
   //   &__preview-column:hover &__body {
@@ -730,11 +730,8 @@ body {
 
   &__preview-column-test {
     padding: 0px 15px;
-    width: 370px;
+    max-width: 370px;
     margin: 0px 0px 30px 0px;
-  }
-  &__preview-column-test img {
-    width: 100%;
   }
   &__preview-column-test h2 {
     margin-bottom: 0;
@@ -763,7 +760,47 @@ body {
   &__body-test {
     padding: 30px 0px 30px 30px;
     background-color: #fbfaf8;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
+  }
+
+  &__preview-imglog-test {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 70%;
+    span {
+      display: flex;
+    }
+  }
+  &__preview-bg-test {
+    background-image: url(../img/block_5/bg_photo_1.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__preview-img-w-log-test {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #362f2d;
+    opacity: 0.5;
+
+    visibility: hidden;
+    img:nth-child(1) {
+      margin-right: 28px;
+    }
+  }
+  &__preview-column-test:hover &__preview-img-w-log-test {
+    visibility: visible;
+    transition: all 0.5s ease;
   }
 
   // ---------------------------------------TEST
@@ -771,7 +808,7 @@ body {
   // колонка 2, ссылка
   &__preview-column-a {
     padding: 0px 15px;
-    width: 370px;
+    max-width: 370px;
     margin: 0px 0px 30px 0px;
   }
 
@@ -788,7 +825,7 @@ body {
     background-image: url(../img/block_5/bg_photo_2.png);
     background-position: center;
     background-size: cover;
-    width: 370px;
+    width: 100%;
     height: 237px;
     top: 0;
     left: 0;
