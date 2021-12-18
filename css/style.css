@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__logo-text:hover {
   color: #ffffff !important;
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 2px 2px 2px #c7b299;
 }
 
 @media (max-width: 850px) {
