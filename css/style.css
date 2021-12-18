@@ -297,13 +297,13 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .header__logo-text:hover {
   color: #ffffff !important;
-  font-size: 40px;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 @media (max-width: 850px) {
@@ -512,14 +512,17 @@ h1, h2, h3, h4, h5, h6 {
           filter: invert(34%) sepia(3%) saturate(159%) hue-rotate(18deg) brightness(93%) contrast(91%);
 }
 
-.content__column:hover {
+.content__column:hover .content__title {
+  color: #c7b299;
+}
+
+.content__column:hover img {
   -webkit-filter: invert(87%) sepia(25%) saturate(366%) hue-rotate(340deg) brightness(84%) contrast(82%);
           filter: invert(87%) sepia(25%) saturate(366%) hue-rotate(340deg) brightness(84%) contrast(82%);
 }
 
-.content__column:hover__text:hover {
-  -webkit-filter: invert(8%) sepia(19%) saturate(691%) hue-rotate(183deg) brightness(95%) contrast(94%);
-          filter: invert(8%) sepia(19%) saturate(691%) hue-rotate(183deg) brightness(95%) contrast(94%);
+.content__column:hover .content__text:after {
+  background-color: #c7b299;
 }
 
 .content__title {
